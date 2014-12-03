@@ -262,7 +262,7 @@ def doFeedbackLoop(sandbox = False):
 
     s = socket()
     c = ssl.wrap_socket(s,
-                        ssl_version=ssl.PROTOCOL_TLSv1,
+                        ssl_version=ssl.PROTOCOL_PROTOCOL_SSLv3,
                         certfile=settings.APN_LIVE_PUSH_CERT)
     c.connect((settings.APN_FEEDBACK_HOST, 2196))
 
